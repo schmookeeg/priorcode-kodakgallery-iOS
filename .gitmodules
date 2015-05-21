@@ -1,0 +1,15 @@
+[submodule "three20"]
+	path = three20
+	url = git://github.com/facebook/three20.git
+[submodule "RestKit"]
+	path = RestKit
+	url = git://github.com/joncampbell/RestKit.git
+[submodule "MBProgressHUD"]
+	path = MBProgressHUD
+	url = git://github.com/matej/MBProgressHUD.git
+[submodule "SVGeocoder"]
+	path = SVGeocoder
+	url = https://github.com/samvermette/SVGeocoder.git
+[submodule "CoreGeoLocation"]
+	path = CoreGeoLocation
+	url = git://github.com/joncampbell/CoreGeoLocation.git 

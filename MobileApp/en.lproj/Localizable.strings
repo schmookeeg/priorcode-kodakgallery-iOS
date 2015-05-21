@@ -1,0 +1,43 @@
+
+
+"GuestUser" = "Guest";  // Anonymous/Guest user name
+
+// Buttons, Message titles, etc.
+"Cancel" = "Cancel";
+
+// Error messages for the Login and Register forms
+"ErrorMessageFirstNameInvalid" = "Please enter a first name.";
+"ErrorMessageEmailInvalid" = "Please enter a valid email address.";
+"ErrorMessagePasswordInvalid" = "Please enter a password.";
+"ErrorMessagePasswordTooShort" = "Please create a longer password.";
+"ErrorMessageConfirmPasswordInvalid" = "Oops! passwords don't match.";
+"ErrorMessageEmailAlreadyExists" = "Email address is already registered.";
+"ErrorMessageInvalidCredentials" = "Incorrect email address or password.";
+"ErrorMessageServerError" = "Server error. Please try again later.";
+
+// Push notifications
+"NOTIFY_COMMENT" = "New comment from %@";
+"NOTIFY_PHOTO" = "New photo added to album %@";
+"NOTIFY_LIKE" = "%@ liked a photo";
+"NOTIFY_JOIN" = "%@ joined %@";
+"NOTIFY_EVENT" = "Update from %@";
+
+// Photo Share
+"PhotoShareActionTitle" = "What would you like to do with this photo?";
+"PhotoShareEmail" = "Email Photo";
+"PhotoShareTextMessage" = "Message Photo";
+"PhotoShareDownload" = "Save to Phone";
+"PhotoShareDownloadDisabled" = "Save Photo Disabled";
+"PhotoOptionsCreateGift" = "Make a Magnet";
+
+// Album Share
+"AlbumShareActionTitle" = "How do you want to share this album?";
+"AlbumShareEmail" = "Email";
+"AlbumShareTextMessage" = "Text Message";
+"AlbumShareFacebook" = "Facebook";
+"AlbumShareMoreOptions" = "More Options...";
+
+// Album Options
+"AlbumOptionsShareAlbum" = "Share Album";
+"AlbumOptionsBuyPrints" = "Buy Prints";
+"PhotoOptionsBuyPrints" = "Buy Prints";

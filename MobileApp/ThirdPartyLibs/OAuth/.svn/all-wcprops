@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/89711/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth
+END
+OAServiceTicket.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/88025/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAServiceTicket.m
+END
+OAPlaintextSignatureProvider.m
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAPlaintextSignatureProvider.m
+END
+OADataFetcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/89711/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OADataFetcher.h
+END
+OAuthConsumer.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAuthConsumer.h
+END
+OADataFetcher.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/89711/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OADataFetcher.m
+END
+OAToken.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAToken.h
+END
+OAHMAC_SHA1SignatureProvider.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAHMAC_SHA1SignatureProvider.h
+END
+OASignatureProviding.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OASignatureProviding.h
+END
+OAMutableURLRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/88025/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAMutableURLRequest.h
+END
+OAToken.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAToken.m
+END
+OAHMAC_SHA1SignatureProvider.m
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAHMAC_SHA1SignatureProvider.m
+END
+OAAsynchronousDataFetcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/88025/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAAsynchronousDataFetcher.h
+END
+OARequestParameter.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OARequestParameter.h
+END
+OAMutableURLRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/89711/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAMutableURLRequest.m
+END
+OAAsynchronousDataFetcher.m
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/88025/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAAsynchronousDataFetcher.m
+END
+OAConsumer.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAConsumer.h
+END
+OARequestParameter.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OARequestParameter.m
+END
+OAConsumer.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/88025/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAConsumer.m
+END
+OAServiceTicket.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/88025/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAServiceTicket.h
+END
+OAPlaintextSignatureProvider.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/OtherLibraries/OAuth/OAPlaintextSignatureProvider.h
+END

@@ -1,0 +1,63 @@
+API_TOKEN=85b573c7c6b63c56c33e856481cb35c5_MTA0NjI0
+TEAM_TOKEN=9321d6705004a3f7bf002ad64ca5f55f_MTk2ODkyMDExLTA5LTEyIDE0OjMxOjM4LjYwNzIxOA
+SIGNING_IDENTITY="iPhone Developer: Eric Oesterle (LV926BWTR7)"
+PROVISIONING_PROFILE="${HOME}/Library/MobileDevice/Provisioning Profiles/"$( /bin/ls -t "${HOME}/Library/MobileDevice/Provisioning Profiles/" | /usr/bin/sed -n 1p )
+LOG="/tmp/testflight.log"
+
+DATE=$( /bin/date +"%Y-%m-%d" )
+ARCHIVE=$( /bin/ls -t "${HOME}/Library/Developer/Xcode/Archives/${DATE}" | /usr/bin/grep xcarchive | /usr/bin/sed -n 1p )
+APP="${HOME}/Library/Developer/Xcode/Archives/${DATE}/${ARCHIVE}/Products/Applications/${PRODUCT_NAME}.app"
+
+/usr/bin/open -a /Applications/Utilities/Console.app $LOG
+
+echo -n "Creating .ipa for ${PRODUCT_NAME}... " > $LOG
+
+/usr/bin/xcrun -sdk iphoneos PackageApplication -v "${APP}" -o "/tmp/${PRODUCT_NAME}.ipa" --sign "${SIGNING_IDENTITY}" --embed "${PROVISIONING_PROFILE}"
+
+echo "done." >> $LOG
+
+echo -n "Uploading to TestFlight... " >> $LOG
+
+/usr/bin/curl "http://testflightapp.com/api/builds.json" \
+-F file=@"/tmp/${PRODUCT_NAME}.ipa" \
+-F api_token="${API_TOKEN}" \
+-F team_token="${TEAM_TOKEN}" \
+-F notes="Build uploaded automatically from Xcode."
+
+echo "done." >> $LOG
+
+# This was taken from variations from:
+# http://davedelong.com/blog/2009/04/15/incrementing-build-numbers-xcode
+
+buildPlist="${SRCROOT}/MobileApp/${PRODUCT_NAME}Info.plist"
+
+# Get the existing buildVersion and buildNumber values from the buildPlist
+buildVersion=$(/usr/libexec/PlistBuddy -c "Print CFBuildVersion" $buildPlist)
+buildNumber=$(/usr/libexec/PlistBuddy -c "Print CFBuildNumber" $buildPlist)
+buildDate=$(date "+%Y%M%d.%H%M%S")
+
+tagName="${buildVersion}-b${buildNumber}"
+
+# Increment the buildNumber
+buildNumber=$(($buildNumber + 1))
+
+echo "Incrementing build number to ${buildNumber} for next build..." >> $LOG
+
+# Set the version numbers in the buildPlist
+/usr/libexec/PlistBuddy -c "Set :CFBuildNumber $buildNumber" $buildPlist
+/usr/libexec/PlistBuddy -c "Set :CFBuildDate $buildDate" $buildPlist
+/usr/libexec/PlistBuddy -c "Set :CFBundleVersion b$buildNumber" $buildPlist
+/usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $buildVersion" $buildPlist
+/usr/libexec/PlistBuddy -c "Set :CFBundleLongVersionString $buildVersion.$buildNumber.$buildDate" $buildPlist
+
+/usr/bin/open "https://testflightapp.com/dashboard/builds/"
+
+
+echo "Tagging build ${tagName}... " >> $LOG
+cd $SRCROOT 
+git tag $tagName >> $LOG
+git push origin $tagName >> $LOG
+
+echo "done." >> $LOG
+
+

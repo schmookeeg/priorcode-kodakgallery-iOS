@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON
+END
+JSON.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/JSON.h
+END
+SBJsonBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/SBJsonBase.h
+END
+SBJsonParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/SBJsonParser.h
+END
+SBJsonWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/SBJsonWriter.h
+END
+SBJSON.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/SBJSON.h
+END
+SBJsonBase.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/SBJsonBase.m
+END
+SBJsonParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/SBJsonParser.m
+END
+SBJsonWriter.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/SBJsonWriter.m
+END
+NSObject+SBJSON.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/NSObject+SBJSON.h
+END
+NSString+SBJSON.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/NSString+SBJSON.h
+END
+SBJSON.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/SBJSON.m
+END
+NSObject+SBJSON.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/NSObject+SBJSON.m
+END
+NSString+SBJSON.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/80914/mobile/AddThisIOSSDK/trunk/AddThisLibrary/AddThisClasses/WebServices/JSON/NSString+SBJSON.m
+END

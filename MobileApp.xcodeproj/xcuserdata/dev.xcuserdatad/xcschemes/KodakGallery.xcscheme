@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.8">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EF5B679A138C397D00CF680A"
+               BuildableName = "HippiePix.app"
+               BlueprintName = "HippiePix"
+               ReferencedContainer = "container:MobileApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EFB0F81E13D73C21001C2137"
+            BuildableName = "KodakGallery.app"
+            BlueprintName = "KG RELEASE"
+            ReferencedContainer = "container:MobileApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      displayScaleIsEnabled = "NO"
+      displayScale = "1.00"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EFB0F81E13D73C21001C2137"
+            BuildableName = "KodakGallery.app"
+            BlueprintName = "KG RELEASE"
+            ReferencedContainer = "container:MobileApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "NSZombieEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      displayScaleIsEnabled = "NO"
+      displayScale = "1.00"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EF5B679A138C397D00CF680A"
+            BuildableName = "HippiePix.app"
+            BlueprintName = "HippiePix"
+            ReferencedContainer = "container:MobileApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Debug"
+      revealArchiveInOrganizer = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "API_TOKEN=85b573c7c6b63c56c33e856481cb35c5_MTA0NjI0&#10;TEAM_TOKEN=9321d6705004a3f7bf002ad64ca5f55f_MTk2ODkyMDExLTA5LTEyIDE0OjMxOjM4LjYwNzIxOA&#10;SIGNING_IDENTITY=&quot;iPhone Developer: Eric Oesterle (LV926BWTR7)&quot;&#10;PROVISIONING_PROFILE=&quot;${HOME}/Library/MobileDevice/Provisioning Profiles/&quot;$( /bin/ls -t &quot;${HOME}/Library/MobileDevice/Provisioning Profiles/&quot; | /usr/bin/sed -n 1p )&#10;LOG=&quot;/tmp/testflight.log&quot;&#10;&#10;DATE=$( /bin/date +&quot;%Y-%m-%d&quot; )&#10;ARCHIVE=$( /bin/ls -t &quot;${HOME}/Library/Developer/Xcode/Archives/${DATE}&quot; | /usr/bin/grep xcarchive | /usr/bin/sed -n 1p )&#10;APP=&quot;${HOME}/Library/Developer/Xcode/Archives/${DATE}/${ARCHIVE}/Products/Applications/${PRODUCT_NAME}.app&quot;&#10;&#10;/usr/bin/open -a /Applications/Utilities/Console.app $LOG&#10;&#10;echo -n &quot;Creating .ipa for ${PRODUCT_NAME}... &quot; &gt; $LOG&#10;&#10;/usr/bin/xcrun -sdk iphoneos PackageApplication -v &quot;${APP}&quot; -o &quot;/tmp/${PRODUCT_NAME}.ipa&quot; --sign &quot;${SIGNING_IDENTITY}&quot; --embed &quot;${PROVISIONING_PROFILE}&quot;&#10;&#10;echo &quot;done.&quot; &gt;&gt; $LOG&#10;&#10;echo -n &quot;Uploading to TestFlight... &quot; &gt;&gt; $LOG&#10;&#10;/usr/bin/curl &quot;http://testflightapp.com/api/builds.json&quot; \&#10;-F file=@&quot;/tmp/${PRODUCT_NAME}.ipa&quot; \&#10;-F api_token=&quot;${API_TOKEN}&quot; \&#10;-F team_token=&quot;${TEAM_TOKEN}&quot; \&#10;-F notes=&quot;Build uploaded automatically from Xcode.&quot;&#10;&#10;echo &quot;done.&quot; &gt;&gt; $LOG&#10;&#10;# This was taken from variations from:&#10;# http://davedelong.com/blog/2009/04/15/incrementing-build-numbers-xcode&#10;&#10;buildPlist=&quot;${SRCROOT}/MobileApp/${PRODUCT_NAME}Info.plist&quot;&#10;&#10;# Get the existing buildVersion and buildNumber values from the buildPlist&#10;buildVersion=$(/usr/libexec/PlistBuddy -c &quot;Print CFBuildVersion&quot; $buildPlist)&#10;buildNumber=$(/usr/libexec/PlistBuddy -c &quot;Print CFBuildNumber&quot; $buildPlist)&#10;buildDate=$(date &quot;+%Y%M%d.%H%M%S&quot;)&#10;&#10;# Increment the buildNumber&#10;buildNumber=$(($buildNumber + 1))&#10;&#10;echo &quot;Incrementing build number to ${buildNumber} for next build...&quot; &gt;&gt; $LOG&#10;&#10;# Set the version numbers in the buildPlist&#10;/usr/libexec/PlistBuddy -c &quot;Set :CFBuildNumber $buildNumber&quot; $buildPlist&#10;/usr/libexec/PlistBuddy -c &quot;Set :CFBuildDate $buildDate&quot; $buildPlist&#10;/usr/libexec/PlistBuddy -c &quot;Set :CFBundleVersion b$buildNumber&quot; $buildPlist&#10;/usr/libexec/PlistBuddy -c &quot;Set :CFBundleShortVersionString $buildVersion&quot; $buildPlist&#10;/usr/libexec/PlistBuddy -c &quot;Set :CFBundleLongVersionString $buildVersion.$buildNumber.$buildDate&quot; $buildPlist&#10;&#10;/usr/bin/open &quot;https://testflightapp.com/dashboard/builds/&quot;&#10;&#10;"
+               shellToInvoke = "/bin/bash">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+   </ArchiveAction>
+</Scheme>
